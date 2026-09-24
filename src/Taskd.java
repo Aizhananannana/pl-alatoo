@@ -4,11 +4,9 @@ public class Taskd {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        int N = sc.nextInt();
-        int K = sc.nextInt();
+        int n = sc.nextInt();
+        int k = sc.nextInt();
 
-        int result = K / N;
-
-        System.out.println(result);
+        System.out.println(k % n);
     }
 }
