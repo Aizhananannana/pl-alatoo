@@ -6,14 +6,13 @@ public class Taskt {
 
         int n = sc.nextInt();
 
-        int first = n / 1000;
-        int second = (n / 100) % 10;
-        int third = (n / 10) % 10;
-        int fourth = n % 10;
+        int a = n / 1000;
+        int b = n / 100 % 10;
+        int c = n / 10 % 10;
+        int d = n % 10;
 
-        int result = (first == fourth && second == third) ? 1 : 0;
+        int result = (a - d) * (a - d) + (b - c) * (b - c);
 
-        System.out.println(result);
+        System.out.println(result == 0 ? 1 : 0);
     }
 }
-

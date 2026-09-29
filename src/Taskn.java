@@ -6,11 +6,11 @@ public class Taskn {
 
         int n = sc.nextInt();
 
-        int totalMinutes = 9 * 60 + n * 45 + (n - 1) / 2 * 5 + (n - 1) / 2 * 10;
+        int totalMinutes = 9 * 60 + n * 45 + (n - 1) / 2 * 20 + (n - 1) % 2 * 5;
 
         int hours = totalMinutes / 60;
         int minutes = totalMinutes % 60;
 
-        System.out.println(hours + ":" + minutes);
+        System.out.println(hours + " " + minutes);
     }
 }
